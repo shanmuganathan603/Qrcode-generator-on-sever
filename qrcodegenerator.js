@@ -23,13 +23,16 @@ app.get('/', (req, res) => {
                 body {
                     font-family: Arial, sans-serif;
                     text-align: center;
-                    background-image:url('https://wallpapers.com/images/featured-full/desktop-lsjkr6wg7ctq97qv.jpg')
+                    background-image:url('https://media.istockphoto.com/id/1470766265/photo/easter-egg-in-a-row-with-rabbit-dall-at-back-of-smart-phone-with-white-screen.jpg?s=612x612&w=0&k=20&c=UicXLP04EAOlzOhI9_BeaqpvVtT3Vz8Diyr-i_cRzvM=');
+                    background-size: cover;
+                background-position: center;
                 }
                 h1 {
-                    color: #333;
+                    margin-top: 350px;
+                    color: black;
                 }
                 form {
-                    margin: 20px;
+                    margin: 80px;
                 }
                 input[type="text"] {
                     padding: 10px;
@@ -70,7 +73,7 @@ app.post('/', async (req, res) => {
             body {
                 font-family: Arial, sans-serif;
                 text-align: center;
-                background-image: url('https://media.istockphoto.com/id/1157789866/photo/modern-computer-laptop-with-blank-screen-on-counter-barand-window-view.webp?b=1&s=170667a&w=0&k=20&c=KQvHmtg9VE7omt0okMYHQEKlBg9pneV_giSGY1KS3f0=');
+                background-image: url('https://media.istockphoto.com/id/1470766265/photo/easter-egg-in-a-row-with-rabbit-dall-at-back-of-smart-phone-with-white-screen.jpg?s=612x612&w=0&k=20&c=UicXLP04EAOlzOhI9_BeaqpvVtT3Vz8Diyr-i_cRzvM=');
                 background-size: cover;
                 background-position: center;
             }
@@ -108,6 +111,6 @@ app.post('/', async (req, res) => {
     `);
 });
 
-app.listen(3000, () => {
+app.listen(3000, '0.0.0.0', () => {
     console.log('Server is running on port 3000');
 });
